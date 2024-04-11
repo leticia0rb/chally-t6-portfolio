@@ -173,20 +173,21 @@
                             <h2 class="h2-contato" id="h2-contato">Contato</h2>
                             <p>Quer entrar em contato comigo?</p>
                             <p>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
-                            <form method="post">
-                                <div>
-                                    <input class="campo" placeholder="Digite seu nome" type="text" required>
-                                </div>
-                                <div>
-                                    <input class="campo" placeholder="Digite seu e-mail" type="mail" required>
-                                </div>
-                                <div>
-                                    <input class="campo" placeholder="Assunto" type="text" required>
-                                </div>
-                                <div>
-                                    <textarea class="mensagem"  placeholder="Digite sua mensagem"></textarea>
-                                    <button type="button">Enviar</button>
-                                </div>
+                            <form id="formContato">
+                                <input type="text" id="nome" placeholder="Nome" />
+                                <div class="erro" id="erroNome"></div>
+                            
+                                <input type="email" id="email" placeholder="E-mail" />
+                                <div class="erro" id="erroEmail"></div>
+                            
+                                <input type="text" id="assunto" placeholder="Assunto" />
+                                <div class="erro" id="erroAssunto"></div>
+                            
+                                <textarea id="mensagem" placeholder="Mensagem"></textarea>
+                                <div class="erro" id="erroMensagem"></div>
+                            
+                                <button type="submit" id="enviarBtn" disabled>Enviar</button>
+
                             </form>
                         </div>
                     </div>
@@ -197,7 +198,7 @@
         I Me Myself - Desafio T6 ONE
         <br>2024
     </footer>
-    <script src="main.js"></script>
+    <script src="app.js"></script>
 
 </body>
 </html>

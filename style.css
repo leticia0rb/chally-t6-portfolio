@@ -112,6 +112,10 @@ header {
     font-family: cursive;
 }
 
+.hero .social a:hover {
+    text-decoration: underline;
+}
+
 .hero-image {
     width: 400px; 
     height: 400px; 
@@ -297,6 +301,11 @@ h3 {
     text-align: center;
 }
 
+.a-exp:hover {
+    border-style: dotted;
+    font-style: italic;
+}
+
 .a-exp2 {
     background-color: var(--cor-quartenaria);
     text-decoration: none;
@@ -304,6 +313,10 @@ h3 {
     padding: 11px 15px 11px 15px;
 }
 
+.a-exp2:hover {
+    border-style: double;
+    font-style: italic;
+}
   
 /* Contato */
 
@@ -338,17 +351,12 @@ h3 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 4px;
 }
 
-.campo { 
-    min-width: 100%;
-    min-height: 20px;
-}
-
-.mensagem {
-    min-width: 100%;
-    min-height: 100px;
+.erro {
+    color: red;
+    margin: 5px 0;
 }
   
 /* Rodapé */
